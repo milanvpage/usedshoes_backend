@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-jordan_pink_1 = Shoe.create(brand: "Nike", yearfounded: "2020", color: "Pink and Black", size: "Women's 8 1/2", design: "customized Pink Jordyn mid 1's, pink foundation and black Nike Swoosh and black outline", condition:"are in Good/Clean conditon, have been worn Twice")
+jordan_pink_1 = Shoe.create(name: "Pink Jordan's", brand: "Nike", yearfounded: "2020", color: "Pink and Black", size: "Women's 8 1/2", design: "customized Pink Jordyn mid 1's, pink foundation and black Nike Swoosh and black outline", condition:"are in Good/Clean conditon, have been worn Twice")
 
-black_air_forces = Shoe.create(brand: "Nike", yearfounded: "2000", color: "Black", size: "Mens 11", design: "All Black Mens throwback Air Force Ones", condition:"Great Condition, never been worn")
+black_air_forces = Shoe.create(name: "Black AirForce Mens", brand: "Nike", yearfounded: "2000", color: "Black", size: "Mens 11", design: "All Black Mens throwback Air Force Ones", condition:"Great Condition, never been worn")
 
 Comment.create(title:"Dope Jordyn 1's", description:"WOWWWW these are Dope I need to get my daughter a Pair", shoe: jordan_pink_1)
 
