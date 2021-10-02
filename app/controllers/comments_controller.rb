@@ -14,6 +14,22 @@ class CommentsController < ApplicationController
         end
     end
 
+    def show
+        comment = Comment.find_by_id(parmas[:id])
+        render json: comment
+
+    end
+
+
+    def update
+        comment = Comment.find_by_id(params[:id])
+        if comment.update(comment_params)
+            render json: comment
+        else
+            render json: {error: "Couldn't Update"}
+        end
+    end
+
 
     private
 
