@@ -32,7 +32,7 @@ class ShoesController < ApplicationController
     def destroy
         shoe = Shoe.find_by_id(params[:id])
         shoe.destroy
-        render json: {message: "Successfully deleted #{shoe.title}"}
+        render json: {message: "Successfully deleted #{shoe.name}"}
     end
 
 
