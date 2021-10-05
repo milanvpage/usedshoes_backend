@@ -21,15 +21,6 @@ ActiveRecord::Schema.define(version: 2021_10_04_213833) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.bigint "shoe_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["shoe_id"], name: "index_comments_on_shoe_id"
-  end
-
   create_table "shoes", force: :cascade do |t|
     t.string "brand"
     t.string "yearfounded"
@@ -45,6 +36,5 @@ ActiveRecord::Schema.define(version: 2021_10_04_213833) do
     t.index ["category_id"], name: "index_shoes_on_category_id"
   end
 
-  add_foreign_key "comments", "shoes"
   add_foreign_key "shoes", "categories"
 end
