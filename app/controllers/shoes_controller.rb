@@ -1,7 +1,7 @@
 class ShoesController < ApplicationController
     def index
         shoes = Shoe.all
-        render json: shoes
+        render json: shoes #ShoSerializer.new(shoes, {include: [:category]}) --how to do it with FastJSON
     end
 
     def create
@@ -23,7 +23,7 @@ class ShoesController < ApplicationController
     def update
         shoe = Shoe.find_by_id(params[:id])
         if shoe.update(shoe_params)
-            render json: shoe
+            render json: shoe # using ActiveModel serializer so I can just say shoe
         else
             render json: {error: "Couldn't Update"}
         end
@@ -39,7 +39,7 @@ class ShoesController < ApplicationController
     private
 
     def shoe_params
-        params.require(:shoes).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, category_id)
+        params.require(:shoe).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, :category_id)
     end
 
 end
