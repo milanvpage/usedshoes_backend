@@ -2,6 +2,7 @@ class ShoesController < ApplicationController
     def index
         shoes = Shoe.all
         render json: shoes #ShoSerializer.new(shoes, {include: [:category]}) --how to do it with FastJSON
+        
     end
 
     def create
@@ -12,12 +13,13 @@ class ShoesController < ApplicationController
         else
             render json: {errors: "Couldn't be Saved"}
         end
+        
     end
 
     def show
         shoe = Shoe.find_by_id(parmas[:id])
         render json: shoe
-
+        
     end
 
     def update
@@ -27,6 +29,7 @@ class ShoesController < ApplicationController
         else
             render json: {error: "Couldn't Update"}
         end
+        byebug
     end
 
     def destroy
@@ -39,7 +42,7 @@ class ShoesController < ApplicationController
     private
 
     def shoe_params
-        params.require(:shoe).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, :category_id)
+        params.require(:shoe).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, :category_id, likes)
     end
 
 end

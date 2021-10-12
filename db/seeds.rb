@@ -6,15 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-sporty = Category.create(name: "Athletic")
-casual = Category.create(name: "Casual")
-street_wear = Category.create(name: "Street Wear")
-fancy = Category.create(name: "Fancy")
+sporty = Category.find_or_create_by(name: "Athletic")
+casual = Category.find_or_create_by(name: "Casual")
+street_wear = Category.find_or_create_by(name: "Street Wear")
+fancy = Category.find_or_create_by(name: "Fancy")
 
 
-Shoe.find_or_create_by(name: "Pink Jordan's", brand: "Nike", yearfounded: "2020", color: "Pink and Black", size: "Kids 2y", design: "customized Pink Jordyn mid 1's, pink foundation and black Nike Swoosh and black outline", condition:"are in Good/Clean conditon, have been worn Twice", image_url:"https://i.ebayimg.com/images/g/bpsAAOSwXaBhHDBt/s-l640.jpg", category: street_wear)
+Shoe.find_or_create_by(name: "Pink Jordan's", brand: "Nike", yearfounded: "2020", color: "Pink and Black", size: "Kids 2y", design: "customized Pink Jordyn mid 1's, pink foundation and black Nike Swoosh and black outline", condition:"are in Good/Clean conditon, have been worn Twice", image_url:"https://i.ebayimg.com/images/g/bpsAAOSwXaBhHDBt/s-l640.jpg", likes: 0, category: street_wear)
 
-Shoe.find_or_create_by(name: "Black AirForce Mens", brand: "Nike", yearfounded: "2000", color: "Black", size: "Mens 11", design: "All Black Mens throwback Air Force Ones", condition:"Great Condition, never been worn", image_url:"https://mercari-images.global.ssl.fastly.net/photos/m94375957037_1.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1590345405", category: street_wear)
+Shoe.find_or_create_by(name: "Black AirForce Mens", brand: "Nike", yearfounded: "2000", color: "Black", size: "Mens 11", design: "All Black Mens throwback Air Force Ones", condition:"Great Condition, never been worn", image_url:"https://mercari-images.global.ssl.fastly.net/photos/m94375957037_1.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1590345405", likes: 0, category: street_wear)
 
 
 
