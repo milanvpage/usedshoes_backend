@@ -26,30 +26,6 @@ Welcome to The Used Shoes App!! This App was created to give a platform for Obse
 
 >Bug reports and pull requests are welcome on GitHub at https://github.com/milanvpage/usedshoes_backend.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
 
-# Contributing
-
->Bug reports and pull requests are welcome on GitHub at https://github.com/milanvpage/DreamWedding.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
-
 # Code Of Conduct
 
->Everyone interacting with the Rails Dream Wedding App project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
-
-
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+>Everyone interacting with the Used Shoes App project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
