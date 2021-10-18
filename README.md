@@ -12,9 +12,17 @@
 
 # Usage
 
-  Once your app is up and running you will be able to view all of the Used Shoes posted by other users. To Upload a Pair of Used Shoes of your own, you can click on the Button at the top of the page that says ```Upload Used Shoes```. Once clicked, a form will pop up for you to fill out to Upload a Pair of Used Shoes. Make sure to fill out every field so your Shoes display properly. 
+  Once your app is up and running you will be able to view all of the Used Shoes posted by other users. To Upload a Pair of Used Shoes of your own, you can click on the Button at the top of the page that says ```Upload Used Shoes```. Once clicked, a form will pop up for you to fill out to Upload a Pair of Used Shoes. Make sure to fill out every field so your Shoes display properly. Once You Fill out every field, click Uplaod Shoe at the bottom of the form and you should see Your Shoes displayed on the Page!
 
-  Development
+  TaDa!!! You Uploaded Your Used Shoes!!!
+
+# Development
+>After checking out the repo, run bundle install to install the necessary dependencies.
+# Contributing
+
+>Bug reports and pull requests are welcome on GitHub at https://github.com/milanvpage/usedshoes_backend.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
+
+
 
 
 * Ruby version
