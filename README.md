@@ -1,6 +1,6 @@
 # README
 
-> Installation
+# Installation
 >1. Clone this Repository
 >2. Open your terminal
 >3. run bundle install inside your terminal
