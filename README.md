@@ -1,6 +1,6 @@
 # README
 
-  Installation
+# Installation
 >1. Clone this Repository
 >2. Open your terminal
 >3. run bundle install inside your terminal
@@ -10,9 +10,9 @@
 >7. Open the terminal on the frontend side: run ```open index.html```
 >Finally a new web browser window/tab will open up and you can begin using the app.
 
-  Usage
+# Usage
 
-  >Once your app is up and running you will be able to view all of the Used Shoes posted by other users. To Upload a Pair of Used Shoes of your own, you can click on the Button at the top of the page that says ```Upload Used Shoes```. Once clicked, a form will pop up for you to fill out to Upload a Pair of Used Shoes. Make sure to fill out every field so your Shoes display properly. 
+  Once your app is up and running you will be able to view all of the Used Shoes posted by other users. To Upload a Pair of Used Shoes of your own, you can click on the Button at the top of the page that says ```Upload Used Shoes```. Once clicked, a form will pop up for you to fill out to Upload a Pair of Used Shoes. Make sure to fill out every field so your Shoes display properly. 
 
   Development
 
