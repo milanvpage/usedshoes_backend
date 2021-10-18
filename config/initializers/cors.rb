@@ -7,11 +7,7 @@
 
  Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins '*' # for whatver website your grabbing from # once you deploy this you'll have an ectual website here 
-     #we don't have a URL yet, everything can access right now because we're still going through development
-    #since we're just in our local environment theonly thing that can access this anways is will be on our local computer, so it's totally fine that evrything can access it right now
-    #can  be speciifc on what pages it goes through and what headers you want to use.
-    #have to install the gem that goes with it aswell
+     origins '*' # for whatver website your grabbing from 
      resource '*',
        headers: :any,
        methods: [:get, :post, :put, :patch, :delete, :options, :head]

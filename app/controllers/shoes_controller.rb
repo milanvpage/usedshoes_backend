@@ -7,6 +7,7 @@ class ShoesController < ApplicationController
 
     def create
         shoe = Shoe.new(shoe_params)
+        #shoe.category = Category.shoes.build #needs to change!!!
         #byebug
         if shoe.save
             render json: shoe
@@ -29,7 +30,7 @@ class ShoesController < ApplicationController
         else
             render json: {error: "Couldn't Update"}
         end
-        byebug
+        #byebug
     end
 
     def destroy
@@ -42,7 +43,7 @@ class ShoesController < ApplicationController
     private
 
     def shoe_params
-        params.require(:shoe).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, :category_id, likes)
+        params.require(:shoe).permit(:brand, :name, :yearfounded, :color, :size, :design, :condition, :image_url, :category_id, :likes)
     end
 
 end
