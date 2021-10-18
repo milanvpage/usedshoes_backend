@@ -1,10 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Installation
 >1. Clone this Repository
 >2. Open your terminal
@@ -13,7 +8,7 @@ Things you may want to cover:
 >5. start your server up by running ```rails``` in your terminal
 >6. click this link to clone the frontens repository: ```https://github.com/milanvpage/usedshoes_frontend.git```
 >7. Open the terminal on the frontend side: run ```open index.html```
->Finally a new web browser window/tab will open and you can begin using the app.
+>Finally a new web browser window/tab will open up and you can begin using the app.
 
 * Ruby version
 
